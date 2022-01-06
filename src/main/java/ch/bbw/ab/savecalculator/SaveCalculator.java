@@ -5,8 +5,8 @@ package ch.bbw.ab.savecalculator;
  * Rechnet 'vorsichtig' mit Zahlen.
  * Warnt, wenn etwas nicht geht.
  *   
- * @author Peter Rutschmann
- * @version 0.0.1
+ * @author Andelo Batinic
+ * @version 6. Januar 2022
  */
 public class SaveCalculator {
 	public int summe(int summand1, int summand2) throws ArithmeticException
@@ -21,6 +21,10 @@ public class SaveCalculator {
 	//Noch un-safe Methoden, die müssen noch angepasst werden.
 	public int subtraktion(int value1, int value2)
 	{
+		long value = (long) value1 - (long) value2;
+		if((value > Integer.MAX_VALUE) || (value < Integer.MIN_VALUE)) {
+			throw new ArithmeticException();
+		}
 		return value1 - value2;
 	}
 	public double division(int value1, int value2) {
