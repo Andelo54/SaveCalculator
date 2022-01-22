@@ -35,9 +35,15 @@ public class SaveCalculator {
     }
 
     private double multiplication(Integer value1, Integer value2) {
+        double value = (double) value1 * (double) value2;
+        if ((value > Integer.MAX_VALUE) || (value < Integer.MIN_VALUE)) {
+            throw new ArithmeticException();
+        }
         return value1 * value2;
     }
-    //pow
-    //sqrt
-    //...
+
+    protected double volumen(int breite, int laenge, int hoehe) {
+        return (double) breite * (double) laenge * (double) hoehe;
+    }
+
 }
