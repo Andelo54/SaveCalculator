@@ -61,4 +61,13 @@ public class SaveCalculatorTest {
         testee.subtraktion(value1, value2);
     }
 
+    //Sichbarkeit
+    @Test
+    public void testVolumenDreiPositivIstOk() {
+        int breite = 10;
+        int laenge = 10;
+        int hoehe = 10;
+        testee.volumen(breite, laenge, hoehe);
+    }
+
 }
