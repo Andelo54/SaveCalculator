@@ -2,8 +2,8 @@ package ch.bbw.ab.savecalculator;
 
 /**
  * Application
- * @autor <your name>
- * @version 1.0.0
+ * @autor Andelo Batinic
+ * @version 27. Januar 2022
  */
 public class App 
 {

@@ -10,7 +10,7 @@ import static org.junit.Assert.assertTrue;
  * Unit test for simple App.
  *
  * @author Andelo Batinic
- * @version 6. Januar 2022
+ * @version 27. Januar 2022
  */
 
 public class SaveCalculatorTest {
@@ -18,10 +18,11 @@ public class SaveCalculatorTest {
      * Rigorous Test :-)
      */
 
-    private SaveCalculator teste;
+    // @Before
+    private SaveCalculator testee;
     @Before
     public void createSavCalculatorTeste() {
-        teste = new SaveCalculator();
+        testee = new SaveCalculator();
     }
 
     @Test
@@ -32,20 +33,32 @@ public class SaveCalculatorTest {
 
     // Namensgebung der Testfunktion
     @Test
-    public void testZweiPositiveIsOk() {
+    public void testSumZweiPositiveIsOk() {
         int value1 = 10;
         int value2 = 20;
-        assertEquals(30, teste.summe(value1, value2));
+        assertEquals(30, testee.summe(value1, value2));
     }
 
     @Test
-    public void testZweiNegativeIstOk() {
-        SaveCalculator teste = new SaveCalculator();
+    public void testSubZweiNegativeIstOk() {
         int value1 = 10;
         int value2 = 20;
-        assertEquals(-10, teste.subtraktion(value1, value2));
+        assertEquals(-10, testee.subtraktion(value1, value2));
     }
 
-    // @Before und @After
+    //Unittest zu Exceptionhandling
+    @Test
+    public void testZweiSumMaxValueIsNotOk() {
+        int value1 = Integer.MAX_VALUE;
+        int value2 = Integer.MAX_VALUE;
+        testee.summe(value1, value2);
+    }
+
+    @Test
+    public void testSubMinValueMaxValueIsNotOk() {
+        int value1 = Integer.MIN_VALUE;
+        int value2 = Integer.MAX_VALUE;
+        testee.subtraktion(value1, value2);
+    }
 
 }
