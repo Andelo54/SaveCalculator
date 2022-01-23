@@ -191,4 +191,68 @@ public class SaveCalculatorTest {
         int value2 = -5;
         testee.subtraktion(value1, value2);
     }
+
+    //Division
+    @Test
+    public void testDivZweiPositiveIstOk() {
+        int value1 = 23;
+        int value2 = 37;
+        testee.division(value1, value2);
+    }
+
+    @Test
+    public void testDivEinPositiveEinNegativeIstOk() {
+        int value1 = -23;
+        int value2 = 37;
+        testee.division(value1, value2);
+    }
+
+    @Test
+    public void testDivEinPostiveMitNullIstOk() {
+        int value1 = 0;
+        int value2 = 37;
+        testee.division(value1, value2);
+    }
+
+    @Test
+    public void testDivEinPositiveMaxValueIstOk() {
+        int value1 = Integer.MAX_VALUE;
+        int value2 = 37;
+        testee.division(value1, value2);
+    }
+
+    @Test
+    public void testDivZweiNegativeIstOk() {
+        int value1 = -23;
+        int value2 = -37;
+        testee.division(value1, value2);
+    }
+
+    @Test
+    public void testDivNullMaxValueIstOk() {
+        int value1 = 0;
+        int value2 = Integer.MAX_VALUE;
+        testee.division(value1, value2);
+    }
+
+    @Test
+    public void testDivMaxValueMinValueIstOk() {
+        int value1 = Integer.MAX_VALUE;
+        int value2 = Integer.MIN_VALUE;
+        testee.division(value1, value2);
+    }
+
+    @Test
+    public void testDivEinNegativeMinusNullIstNotOk() {
+        int value1 = -54;
+        int value2 = -0;
+        testee.division(value1, value2);
+    }
+
+    @Test
+    public void testDivZweiMinusNullIstNotOk() {
+        int value1 = -0;
+        int value2 = -0;
+        testee.division(value1, value2);
+    }
 }
