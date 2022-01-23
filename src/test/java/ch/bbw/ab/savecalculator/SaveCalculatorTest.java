@@ -127,4 +127,68 @@ public class SaveCalculatorTest {
         int value2 = -0;
         testee.summe(value1, value2);
     }
+
+    //Subtraktion
+    @Test
+    public void testSubZweiPositiveIstOk() {
+        int value1 = 23;
+        int value2 = 37;
+        testee.subtraktion(value1, value2);
+    }
+
+    @Test
+    public void testSubEinPositiveEinNegativeIstOk() {
+        int value1 = -23;
+        int value2 = 37;
+        testee.subtraktion(value1, value2);
+    }
+
+    @Test
+    public void testSubEinPostiveMitNullIstOk() {
+        int value1 = 0;
+        int value2 = 37;
+        testee.subtraktion(value1, value2);
+    }
+
+    @Test
+    public void testSubEinPositiveMaxValueIstOk() {
+        int value1 = Integer.MAX_VALUE;
+        int value2 = 37;
+        testee.subtraktion(value1, value2);
+    }
+
+    @Test
+    public void testSubZweiNegativeIsOk() {
+        int value1 = -23;
+        int value2 = -37;
+        testee.subtraktion(value1, value2);
+    }
+
+    @Test
+    public void testSubNullMaxValueIstOk() {
+        int value1 = 0;
+        int value2 = Integer.MAX_VALUE;
+        testee.subtraktion(value1, value2);
+    }
+
+    @Test
+    public void testSubMaxValueMinValueIstNotOk() {
+        int value1 = Integer.MAX_VALUE;
+        int value2 = Integer.MIN_VALUE;
+        testee.subtraktion(value1, value2);
+    }
+
+    @Test
+    public void testSubEinNegativeMinusNullIstOk() {
+        int value1 = -54;
+        int value2 = -0;
+        testee.subtraktion(value1, value2);
+    }
+
+    @Test
+    public void testSubMinValueEineNegativeIstOk() {
+        int value1 = Integer.MIN_VALUE;
+        int value2 = -5;
+        testee.subtraktion(value1, value2);
+    }
 }
