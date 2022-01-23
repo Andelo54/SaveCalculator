@@ -70,4 +70,61 @@ public class SaveCalculatorTest {
         testee.volumen(breite, laenge, hoehe);
     }
 
+    //Äquivalenzklassen
+    //Addition
+    @Test
+    public void testSumZweiPositiveIstOk() {
+        int value1 = 23;
+        int value2 = 37;
+        testee.summe(value1, value2);
+    }
+
+    @Test
+    public void testSumEinPositiveEinNegativeIstOk() {
+        int value1 = -23;
+        int value2 = 37;
+        testee.summe(value1, value2);
+    }
+
+    @Test
+    public void testSumEinPostiveMitNullIstOk() {
+        int value1 = 0;
+        int value2 = 37;
+        testee.summe(value1, value2);
+    }
+
+    @Test
+    public void testSumEinPositiveMaxValueIstNotOk() {
+        int value1 = Integer.MAX_VALUE;
+        int value2 = 37;
+        testee.summe(value1, value2);
+    }
+
+    @Test
+    public void testSumZweiNegativeIstOk() {
+        int value1 = -23;
+        int value2 = -37;
+        testee.summe(value1, value2);
+    }
+
+    @Test
+    public void testSumNullMaxValueIstOk() {
+        int value1 = 0;
+        int value2 = Integer.MAX_VALUE;
+        testee.summe(value1, value2);
+    }
+
+    @Test
+    public void testSumMaxValueMinValueIstOk() {
+        int value1 = Integer.MAX_VALUE;
+        int value2 = Integer.MIN_VALUE;
+        testee.summe(value1, value2);
+    }
+
+    @Test
+    public void testSumeEinNegativeMinusNullIstOk() {
+        int value1 = -54;
+        int value2 = -0;
+        testee.summe(value1, value2);
+    }
 }
