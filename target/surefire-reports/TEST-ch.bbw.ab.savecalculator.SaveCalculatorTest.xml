@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0.033" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0.06" tests="26" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CH"/>
     <property name="sun.boot.library.path" value="/Users/Bbwschule/Library/Java/JavaVirtualMachines/azul-15.0.3/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/Bbwschule/IdeaProjects/Modul_426/02_01_SaveCalculatorMVN_AndeloBatinic/target/surefire/surefirebooter235767407986327002.jar /Users/Bbwschule/IdeaProjects/Modul_426/02_01_SaveCalculatorMVN_AndeloBatinic/target/surefire 2022-01-22T17-56-40_427-jvmRun1 surefire10430650881229924605tmp surefire_03009932872235067836tmp"/>
+    <property name="sun.java.command" value="/Users/Bbwschule/IdeaProjects/Modul_426/02_01_SaveCalculatorMVN_AndeloBatinic/target/surefire/surefirebooter4153935506442605799.jar /Users/Bbwschule/IdeaProjects/Modul_426/02_01_SaveCalculatorMVN_AndeloBatinic/target/surefire 2022-01-24T19-16-23_736-jvmRun1 surefire6357287927831478178tmp surefire_08506124107571323961tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/Bbwschule/IdeaProjects/Modul_426/02_01_SaveCalculatorMVN_AndeloBatinic/target/test-classes:/Users/Bbwschule/IdeaProjects/Modul_426/02_01_SaveCalculatorMVN_AndeloBatinic/target/classes:/Users/Bbwschule/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/Bbwschule/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/Users/Bbwschule/IdeaProjects/Modul_426/02_01_SaveCalculatorMVN_AndeloBatinic/target/surefire/surefirebooter235767407986327002.jar"/>
+    <property name="surefire.real.class.path" value="/Users/Bbwschule/IdeaProjects/Modul_426/02_01_SaveCalculatorMVN_AndeloBatinic/target/surefire/surefirebooter4153935506442605799.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="15.0.3+3"/>
@@ -55,8 +55,30 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
+  <testcase name="testSumZweiPositiveIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0.001"/>
+  <testcase name="testDivMaxValueMinValueIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0"/>
+  <testcase name="testSumNullMaxValueIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0"/>
+  <testcase name="testSumEinPositiveEinNegativeIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0"/>
   <testcase name="shouldAnswerWithTrue" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0.001"/>
-  <testcase name="testSumZweiPositiveIsOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0"/>
+  <testcase name="testSumEinPostiveMitNullIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0"/>
+  <testcase name="testSumZweiNegativeIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0"/>
+  <testcase name="testDivEinPostiveMitNullIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0"/>
+  <testcase name="testSubZweiNegativeIsOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0.001"/>
+  <testcase name="testDivEinPositiveMaxValueIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0"/>
+  <testcase name="testSubEinPositiveMaxValueIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0.001"/>
+  <testcase name="testSubEinNegativeMinusNullIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0"/>
+  <testcase name="testSumMaxValueMinValueIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0.001"/>
+  <testcase name="testSubZweiPositiveIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0"/>
+  <testcase name="testSumeEinNegativeMinusNullIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0"/>
+  <testcase name="testDivEinPositiveEinNegativeIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0.001"/>
+  <testcase name="testSubNullMaxValueIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0"/>
+  <testcase name="testDivZweiPositiveIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0.001"/>
+  <testcase name="testSubMinValueEineNegativeIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0"/>
+  <testcase name="testSumZweiPositiveIsOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0.001"/>
   <testcase name="testSubZweiNegativeIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0"/>
+  <testcase name="testSubEinPositiveEinNegativeIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0"/>
+  <testcase name="testDivNullMaxValueIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0"/>
+  <testcase name="testDivZweiNegativeIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0"/>
   <testcase name="testVolumenDreiPositivIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0"/>
+  <testcase name="testSubEinPostiveMitNullIstOk" classname="ch.bbw.ab.savecalculator.SaveCalculatorTest" time="0.001"/>
 </testsuite>
